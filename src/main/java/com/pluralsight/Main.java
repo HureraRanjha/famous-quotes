@@ -27,10 +27,12 @@ public class Main
 
             System.out.println(quotes[index-1]);
 
-        } catch (Exception e)
+        } catch (NumberFormatException e)
         {
-            System.out.println("OUT OF RANGE TWIN");
-            e.printStackTrace();
+            System.out.println("Choose an integer from 1-10");
+        }catch (ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("OUT OF BOUNDS");
         }
 
 
